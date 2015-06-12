@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Docs.faq - Beebeeto</title>
+    <link rel="stylesheet" href="/static/sphinx_rtd_theme.css" type="text/css">
+    <link rel="stylesheet" href="/static/readthedocs-doc-embed.css" type="text/css">
+    <link rel="stylesheet" href="/static/beebeeto-docs.css" type="text/css">
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="bookmark" href="/favicon.ico"/>
+  </head>
+  <body class="wy-body-for-nav">
+    <div class="wy-grid-for-nav">
+      <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+        <div class="wy-side-nav-search">
+          <a href="/"><img src="/static/img/beebeeto_logo.png"></a>
+          <h1>Beebeeto</h1>
+        </div>
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          <p style="margin: 10px;color: #C7C7C7;">Beebeeto-framework</p>
+          <ul>
+            <li class="toctree-l1">
+              <a class="reference internal" href="/">介绍</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="toctree-l1"><a class="reference internal" href="/framework/how-to-write.html">编写POC</a></li>
+          </ul>
+          <ul>
+            <li class="toctree-l1"><a class="reference internal" href="/framework/faq.html">常见问题</a></li>
+          </ul>
+          <ul>
+            <li class="toctree-l1"><a class="reference internal" href="/contact-us.html">联系我们</a></li>
+          </ul>
+        </div>
+        &nbsp;
+      </nav>
+      <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+        <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="http://beebeeto.readthedocs.org/zh_CN/latest/#">beebeeto</a>
+        </nav>
+        <div class="wy-nav-content">
+          <div class="rst-content">
+            <div role="main" class="document">
+              <h1 id="section">关于误报</h1>
+
+<p>开发者编写的 PoC 通常存在误报情况，这种情况多数是由判断漏洞是否存在条件不严谨所导致的。 所以应当在编写时，注意判断语句的严谨性，比如：</p>
+
+<pre><code>if 'b2ef2cd728d8ec'[::-1] in content:
+</code></pre>
+
+<p>就比下面这条判断好的多：</p>
+
+<pre><code>if 'ok' in content:
+</code></pre>
+
+<p>介于误报较多的情况，我们编写了 batchtest 批量测试脚本。可根据不同需求修改 batchtest.py ，例如进行 poc_2014_0007 的批量扫描，则修改93行 import ：</p>
+
+<pre><code>if __name__ == '__main__':
+  import time
+  # run poc_id
+  from poc_20140007 import MyPoc
+
+  start_time = time.time()
+  bt = BatchTest(seed_file='website.txt',
+                func2run=MyPoc.verify,
+                options=None,
+                result_file='result.txt',
+                thread_num=100,
+                vervose=True)
+</code></pre>
+
+            </div>
+            <footer>
+              <hr>
+              <div role="contentinfo">
+                <p>
+                  &copy; 版权所有 2014, Beebeeto.com &amp; n0tr00t security team
+                </p>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

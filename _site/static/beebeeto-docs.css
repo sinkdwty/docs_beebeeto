@@ -1,0 +1,92 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.wy-side-nav-search {
+  background-color: #c62011;
+  text-align: center;
+  padding: 2em;
+  display: block;
+  color: #fcfcfc;
+  margin-bottom: 0.809em;
+}
+
+.wy-nav-side {
+  background: #2C2C2C;
+}
+
+.wy-nav-content {
+  max-width: 100%;
+  width: 100%;
+}
+
+.wy-nav-content a:visited {
+  color: #0E76B9;
+}
+
+.wy-menu-vertical a:active {
+  background-color: #AF4A22;
+}
+
+.wy-side-nav-search img {
+  height: 70px;
+  width: 70px;
+  background-color: #FFFFFF;
+  padding: 3px;
+}
+
+.wy-side-nav-search>a:hover, .wy-side-nav-search .wy-dropdown>a:hover {
+  background: none;
+}
+.wy-side-nav-search>a, .wy-side-nav-search .wy-dropdown>a {
+  padding: 0px;
+}
+
+.content-hr {
+  border-top: 1px solid #F7F7F7;
+}
+
+li {
+  list-style: initial;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.toctree-l1 {
+  list-style: none;
+  margin: 0px;
+}
+
+.document pre {
+  font-family: Consolas, "DejaVu Sans Mono", "Lucida Console", Monaco, Andale Mono, "MS Gothic", monospace;
+  font-size: 15px;
+  background-color: #FFF;
+  padding: 0 .4em;
+  overflow: auto;
+  margin: 1em 0;
+  padding: 5px 0 5px 10px;
+  border: 1px #BBB solid;
+}
+
+.document pre code {
+  font-family: Consolas, "DejaVu Sans Mono", "Lucida Console", Monaco, Andale Mono, "MS Gothic", monospace;
+  color: #000;
+  background-color: #FFF;
+  padding: 0 .2em;
+  border: none;
+  white-space: pre;
+}
+
+.document blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-left: 3px solid #C3C3C3;
+  font-style: normal;
+  padding: 0 0 0 10px;
+  display: block;
+  line-height: 22px;
+  vertical-align: baseline;
+  font-size: 100%;
+}
