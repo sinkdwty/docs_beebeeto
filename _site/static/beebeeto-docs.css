@@ -72,7 +72,7 @@ li {
   font-family: Consolas, "DejaVu Sans Mono", "Lucida Console", Monaco, Andale Mono, "MS Gothic", monospace;
   color: #000;
   background-color: #FFF;
-  padding: 0 .2em;
+  padding: 0em;
   border: none;
   white-space: pre;
 }
