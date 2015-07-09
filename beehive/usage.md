@@ -10,11 +10,11 @@ title: Docs.Beehive.Usage
 
 # Installation
 
-Download Zip: [https://github.com/n0tr00t/none/archive/master.zip](https://github.com/n0tr00t/none/archive/master.zip)
+Download Zip: [https://github.com/n0tr00t/Beehive/archive/master.zip](https://github.com/n0tr00t/Beehive/archive/master.zip)
 
 Git:
 
-    git clone https://github.com/n0tr00t/none/archive/master.zip
+    git clone https://github.com/n0tr00t/Beehive/archive/master.zip
 
 Unix:
 
