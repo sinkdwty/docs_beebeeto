@@ -107,3 +107,17 @@ storm / 多对单模式，用户选择配置适合目标的 PoC 列表进行扫�
 #### help
 
 常用 help 可以轻松的记住这些小命令：）
+
+<hr class="content-hr">
+
+# Update Beehive & Pocdb
+
+Beehive 目录下运行：
+
+    git pull origin master
+
+如果 Pocdb.json 更新了的话，可以进入交互式模式运行，以添加新增的攻击载荷：
+
+    updatedb -m json
+
+另外别忘记偶尔切换到 beebeeto-framework 更新一下，同样也是 git pull :-)
