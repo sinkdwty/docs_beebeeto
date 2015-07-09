@@ -14,7 +14,7 @@ Download Zip: [https://github.com/n0tr00t/Beehive/archive/master.zip](https://gi
 
 Git:
 
-    git clone https://github.com/n0tr00t/Beehive/archive/master.zip
+    git clone https://github.com/n0tr00t/Beehive
 
 Unix:
 
