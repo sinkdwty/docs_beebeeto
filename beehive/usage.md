@@ -19,14 +19,14 @@ Git:
 Unix:
 
     cd beehive
-    python setup.py
+    sudo python setup.py
 
 Windows:
 
     dir beehive
-    python setup.py
+    sudo python setup.py
 
-如果你的 pip 被墙，可以选择 python setup.py proxy 代理模式运行。哦对，我们为了兼容 Windows 真是废了很大的力气 :-)
+如果你的 pip 被墙，可以选择 sudo python setup.py proxy 代理模式运行。哦对，我们为了兼容 Windows 真是废了很大的力气 :-)
 
 <b>注意：</b> beehive 需要在 Python 2.x 平台上运行
 
