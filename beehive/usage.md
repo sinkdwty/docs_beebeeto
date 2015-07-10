@@ -24,7 +24,7 @@ Unix:
 Windows:
 
     dir beehive
-    sudo python setup.py
+    python setup.py
 
 如果你的 pip 被墙，可以选择 sudo python setup.py proxy 代理模式运行。哦对，我们为了兼容 Windows 真是废了很大的力气 :-)
 
