@@ -65,6 +65,23 @@
   <li>sudo pip install name</li>
 </ul>
 
+<hr class="content-hr" />
+
+<h3 id="no-module-named-baseframe">No module named baseframe</h3>
+
+<p>Beehive 依赖于 Beebeeto-framework 所以在 setup.py 中我们会进行检测与 Beehive 同级目录有没有 bframework 框架，如果没有则会进行 clone。</p>
+
+<p>解决方案：切换到 Beehive 当前目录下运行 git clone https://github.com/n0tr00t/Beebeeto-framework</p>
+
+<p>使得最后的目录结构如下：</p>
+
+<pre><code>Test
+|
+|- Beebeeto-framework
+|- Beehive
+</code></pre>
+
+
             </div>
             <footer>
               <hr>
